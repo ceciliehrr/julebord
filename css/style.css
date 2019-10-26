@@ -18,6 +18,11 @@ Red: #B31E1A
      font-family: "Press Start 2P";
  }
  
+ .w3-bar {
+     background-color: #212529;
+     color: white;
+ }
+ 
  .big {
      font-size: 24px;
  }
@@ -47,6 +52,17 @@ Red: #B31E1A
      margin-left: auto;
      margin-right: auto;
      width: 50%;
+ }
+ 
+ .gif-row {
+     display: inline;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .gif-size {
+     width: 120px;
+     height: auto;
  }
  
  .right-gif {
@@ -90,6 +106,17 @@ Red: #B31E1A
      animation-duration: 8s;
      animation-iteration-count: infinite;
  }
+ 
+ #third {
+     color: white;
+     background-color: #153F36;
+ }
+ 
+ canvas {
+     position: absolute;
+     top: 50;
+     left: 0;
+ }
  /* Safari 4.0 - 8.0 */
  
  @-webkit-keyframes liste {
@@ -109,6 +136,11 @@ Red: #B31E1A
      100% {
          right: 100%;
      }
+ }
+ 
+ footer {
+     background-color: #212529;
+     color: white;
  }
  
  @media only screen and (max-width: 768px) {
