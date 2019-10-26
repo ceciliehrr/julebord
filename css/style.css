@@ -1,0 +1,119 @@
+ @charset "utf-8";
+ /*
+Green: #153F36
+Red: #B31E1A
+ 
+*/
+ 
+ body {
+     font-family: "Lato", sans-serif
+ }
+ 
+ html,
+ body,
+ pre,
+ code,
+ kbd,
+ samp {
+     font-family: "Press Start 2P";
+ }
+ 
+ .big {
+     font-size: 24px;
+ }
+ 
+ #first {
+     color: white;
+     background-color: #153F36;
+     padding: 20px;
+ }
+ 
+ #welcome {
+     width: 300px;
+     height: auto;
+ }
+ 
+ #strek {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ 
+ .lists {
+     text-align: left;
+ }
+ 
+ .center-gif {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+ }
+ 
+ .right-gif {
+     float: right;
+ }
+ 
+ .icon {
+     width: 45px;
+     height: 45px;
+     margin: 5px;
+     margin-right: 15px;
+ }
+ 
+ .icon-medium {
+     width: 85px;
+     height: 85px;
+ }
+ 
+ .icon-large {
+     width: 155px;
+     height: 155px;
+ }
+ 
+ #second {
+     color: white;
+     background-color: #B31E1A;
+ }
+ 
+ .pris {
+     font-size: 200px;
+     font-family: 'Monoton', cursive;
+ }
+ 
+ .listenisse {
+     position: relative;
+     -webkit-animation-name: liste;
+     /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 8s;
+     /* Safari 4.0 - 8.0 */
+     animation-name: liste;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+ }
+ /* Safari 4.0 - 8.0 */
+ 
+ @-webkit-keyframes liste {
+     0% {
+         right: 0px;
+     }
+     100% {
+         right: 100%;
+     }
+ }
+ /* Standard syntax */
+ 
+ @keyframes liste {
+     0% {
+         right: 0px;
+     }
+     100% {
+         right: 100%;
+     }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+     .pris {
+         font-size: 150px;
+     }
+ }

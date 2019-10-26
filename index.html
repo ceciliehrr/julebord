@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/nes.css@2.2.1/css/nes.min.css" rel="stylesheet" />
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="#second" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRIS</a>
+            <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HVA SKJER</a>
+            <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIBBA</a>
+            <a href="#some" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SoMe</a>
+
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIS</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HVA SKJER</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RIBBA</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SoMe</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- The First Section -->
+        <div id="first">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <img class="center-gif" alt="velkommen" src="pictures/3dwelcome.gif" id="welcome">
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+
+                <p class="w3-center big"><i>CHRISTMAS TABLE 2019</i></p>
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+
+                <div class="nes-container is-rounded is-dark with-title">
+                    <p class="title">info</p>
+                    <div class="lists">
+                        <ul class="nes-list is-circle">
+                            <li><img class="icon" src="pictures/tid.gif">7. desember klokken 18:00</li>
+                            <li><img class="icon" src="pictures/hus.gif">Kantina i Dyrmyrgata 4, 3611 Kongsberg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="center-gif icon-large" src="pictures/outfit.gif" id="rompenisse">
+        </div>
+
+
+        <!-- The Second Section -->
+        <div id="second">
+            <div class="w3-container w3-content w3-padding-64">
+                <img class="center-gif icon-medium" src="pictures/dollar.gif" id="dollar">
+                <p class="w3-center big"><i>PRIS</i></p>
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+                <div class="w3-center pris">200</div>
+                <section class="w3-center icon-list">
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                </section>
+                <div class="nisseanime">
+                    <img class="listenisse right-gif icon-large" src="pictures/lister.gif">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-medium" id="some">
+        <section class="icon-list">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/events/384490719058090/" target="_blank"><i class="nes-icon facebook is-medium"></i></a>
+        </section>
+        <br>
+        <p>SoME-ansvarlig Cecilie Hansen Rørås</p>
+        <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
