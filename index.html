@@ -21,7 +21,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
             <a href="#second" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRIS</a>
             <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HVA SKJER</a>
-            <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIBBA</a>
+            <a href="#fourth" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIBBA</a>
             <a href="#some" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SoMe</a>
 
         </div>
@@ -29,10 +29,10 @@
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIS</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HVA SKJER</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RIBBA</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SoMe</a>
+        <a href="#second" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIS</a>
+        <a href="#third" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HVA SKJER</a>
+        <a href="#fourth" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RIBBA</a>
+        <a href="#some" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SoMe</a>
     </div>
 
     <!-- Page content -->
@@ -40,6 +40,7 @@
 
         <!-- The First Section -->
         <div id="first">
+
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <img class="center-gif" alt="velkommen" src="pictures/3dwelcome.gif" id="welcome">
                 <img class="center-gif" src="pictures/strek.gif" id="strek">
@@ -110,7 +111,6 @@
 
         <!-- The Third Section -->
         <div id="third">
-            <canvas id="canvas"></canvas>
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <img class="center-gif" src="pictures/strek.gif" id="strek">
                 <p class="w3-center big"><i>HVA SKJER?</i></p>
@@ -127,6 +127,29 @@
                         </ul>
                     </div>
                 </div>
+                <br>
+                <img class="center-gif gif-size" src="pictures/gitar.gif">
+
+            </div>
+        </div>
+        <!-- The music Section -->
+        <div id="music">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+                <p class="w3-center big"><i>KOM I RIKTIG STEMNING</i></p>
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+                <br>
+                <iframe class="center-gif" src="https://open.spotify.com/embed/playlist/3wr0y25lqjj2Q9dT8YAapN" width="600" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+
+        <div id="fourth">
+            <canvas id="canvas"></canvas>
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+                <p class="w3-center big"><i>RIBBA - MINUTT FOR MINUTT</i></p>
+                <img class="center-gif" src="pictures/strek.gif" id="strek">
+                <img class="center-gif" src="pictures/coming_soon.gif">
 
             </div>
         </div>
