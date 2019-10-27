@@ -164,4 +164,20 @@ Red: #B31E1A
      .pris {
          font-size: 150px;
      }
+     .nes-container li {
+         font-size: 12px;
+     }
+     .icon {
+         width: 30px;
+         height: 30px;
+         margin: 2px;
+         margin-right: 5px;
+     }
+     .nes-list {
+         margin: 2px;
+         padding: 2px;
+     }
+     .spotify {
+         width: 100%;
+     }
  }
