@@ -151,3 +151,17 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+var imageUrls = [
+    "some.gif",
+    "dog.gif",
+    "skaal.gif",
+    "christmastree.gif",
+    "ribbe.gif",
+    "kevin.gif"
+];
+
+function changeImage() {
+    var num = Math.floor(Math.random() * (imageUrls.length));
+    document.getElementById("somegif").src = "pictures/" + imageUrls[num];
+}
