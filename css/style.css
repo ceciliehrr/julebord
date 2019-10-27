@@ -109,6 +109,7 @@ Red: #B31E1A
      /* Safari 4.0 - 8.0 */
      animation-name: liste;
      animation-duration: 8s;
+     animation-delay: 2s;
      animation-iteration-count: infinite;
  }
  
