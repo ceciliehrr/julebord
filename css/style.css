@@ -181,4 +181,7 @@ Red: #B31E1A
      .spotify {
          width: 100%;
      }
+     .listenisse {
+         animation-duration: 5s;
+     }
  }
