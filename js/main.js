@@ -153,15 +153,14 @@ window.onclick = function(event) {
 }
 
 var imageUrls = [
-    "some.gif",
-    "dog.gif",
-    "skaal.gif",
-    "christmastree.gif",
-    "ribbe.gif",
-    "kevin.gif"
+    "pictures/some.gif",
+    "https://media.giphy.com/media/FDHDP7DREKSlYtHm43/giphy.gif",
+    "https://media.giphy.com/media/l41lSh8C2E39fzuta/giphy.gif",
+    "https://media.giphy.com/media/Ub8XEam5vXbMY/giphy.gif",
+    "https://media.giphy.com/media/3o7TKLHb0PWRNnoVq0/giphy.gif"
 ];
 
 function changeImage() {
     var num = Math.floor(Math.random() * (imageUrls.length));
-    document.getElementById("somegif").src = "pictures/" + imageUrls[num];
+    document.getElementById("somegif").src = imageUrls[num];
 }
