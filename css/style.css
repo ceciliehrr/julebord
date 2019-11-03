@@ -227,7 +227,7 @@ Red: #B31E1A
  @media only screen and (max-width: 768px) {
      /* For mobile phones: */
      #name_field {
-         font-size: 8px;
+         font-size: 5px;
      }
      .nes-input {
          margin: 0;
