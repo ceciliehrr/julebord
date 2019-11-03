@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <title>Julebord i kjellern</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -27,6 +28,7 @@
             <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HVA SKJER</a>
             <a href="#fourth" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIBBA</a>
             <a href="#some" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SoMe</a>
+            <a id="myBtn" class="w3-bar-item w3-button w3-padding-large center-gif" title="spam me"><img class="bell" src="pictures/bell.gif"></a>
 
         </div>
     </div>
@@ -38,7 +40,26 @@
         <a href="#fourth" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RIBBA</a>
         <a href="#some" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SoMe</a>
     </div>
-
+    <!---MODAL-->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content nes-dialog is-dark is-rounded" id="dialog-rounded">
+            <span class="close">&times;</span>
+            <p class="title" id="modal-title"></p>
+            <img class="center-gif" width="50" height="auto" alt="email" src="pictures/email.gif">
+            <form method="POST" netlify-honeypot="bot-field" data-netlify="true" action="takktakk.html">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="nes-field">
+                    <label for="name_field" id="mail">Subscribe?</label>
+                    <input type="text" name="email" id="name_field" class="nes-input" placeholder="Din digitale telefaksadresse">
+                </div>
+                <button type="submit" class="nes-btn is-primary" id="confirm">Send</button>
+            </form>
+            <button class="nes-btn" id="cancel">Nei!!!</button>
+        </div>
+    </div>
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
