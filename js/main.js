@@ -262,7 +262,8 @@ var chuckVitser = [
     "Chuck Norris can stop a red light!",
     "Chuck Norris recently died. But he got better.",
     "Rome was not built in a day because Chuck Norris was not there to do the job right.",
-    "In the Bible, Jesus turned water into wine. But then Chuck Norris turned that wine into beer."
+    "In the Bible, Jesus turned water into wine. But then Chuck Norris turned that wine into beer.",
+    "They wanted to put Chuck Norris on Mount Rushmore, but the granite wasn’t though enough for his beard. "
 ]
 
 document.getElementById("chuckklikk").onclick = function() {
