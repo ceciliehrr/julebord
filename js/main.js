@@ -221,3 +221,63 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// image carousel
+var slideIndex = 1;
+showFacts(slideIndex);
+
+function plusFacts(n) {
+    showFacts(slideIndex += n);
+}
+
+function currentFact(n) {
+    showFacts(slideIndex = n);
+}
+
+function showFacts(n) {
+    var i;
+    var slides = document.getElementsByClassName("myFacts");
+    var dots = document.getElementsByClassName("tall");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+var chuckVitser = [
+    "There is no Esc key on Chuck Norris' keyboard, because no one escapes Chuck Norris",
+    "It takes Chuck Norris 20 minutes to watch 60 minutes ",
+    "Chuck Norris will never have a heart attack. His heart isn't nearly foolish enough to attack him",
+    "Chuck Norris doesn't bowl strikes, he just knocks down one pin and the other nine faint.",
+    "Chuck Norris once ordered a steak in a restaurant, the steak did what it was told.",
+    "Chuck Norris built the hospital he was born in",
+    "Chuck Norris do not have a mortal father. He went back in time  and fathered himself.",
+    "Chuck Norris can leave a message before the beep.",
+    "Chuck Norris can stop a red light!",
+    "Chuck Norris recently died. But he got better.",
+    "Rome was not built in a day because Chuck Norris was not there to do the job right.",
+    "In the Bible, Jesus turned water into wine. But then Chuck Norris turned that wine into beer."
+]
+
+document.getElementById("chuckklikk").onclick = function() {
+    document.getElementById("chucktekst").innerHTML = chuckVitser[Math.floor(Math.random() * chuckVitser.length)];
+}
+
+var mitchVitser = [
+    '"We protect when other people don’t want to protect, and we go above and beyond."',
+    '"If you want me, you can have me. But rapido because the boat is on fire."',
+    '<b>Mitch Buchannon:</b> "We got a dead body on our beach."</br> <b>Matt Brody</b>: "That’s not our job."',
+    '"All the bad shit happening on our beach started once she took over and my balls say we need to go over there and check it out."',
+    '"I’m Mitch Buchannon, you motherfucker."',
+    '"I’ll die when the tide stops and the moon drowns. Until then... I’m oceanic, motherfucker."'
+]
+
+document.getElementById("hasselklikk").onclick = function() {
+    document.getElementById("hasseltekst").innerHTML = mitchVitser[Math.floor(Math.random() * mitchVitser.length)];
+}

@@ -102,7 +102,7 @@ Red: #B31E1A
      height: auto;
  }
  
- #strek {
+ .strek {
      margin-top: 30px;
      margin-bottom: 30px;
  }
@@ -189,6 +189,11 @@ Red: #B31E1A
      background-color: #B31E1A;
  }
  
+ #funfacts {
+     color: white;
+     background-color: #B31E1A;
+ }
+ 
  #music {
      color: white;
      background-color: #212529;
@@ -237,10 +242,6 @@ Red: #B31E1A
      display: none;
      text-align: center;
  }
- 
- img {
-     vertical-align: middle;
- }
  /* Slideshow container */
  
  .slideshow-container {
@@ -260,16 +261,20 @@ Red: #B31E1A
      margin-top: -22px;
      color: white;
      font-weight: bold;
-     font-size: 18px;
+     font-size: 15px;
      transition: 0.6s ease;
      border-radius: 0 3px 3px 0;
      user-select: none;
  }
  /* Position the "next button" to the right */
  
+ .round {
+     border-radius: 50%;
+     background-color: #153F36;
+ }
+ 
  .next {
      right: 0;
-     border-radius: 3px 0 0 3px;
  }
  /* On hover, add a black background color with a little bit see-through */
  
@@ -314,6 +319,22 @@ Red: #B31E1A
  .dot:hover {
      background-color: #717171;
  }
+ 
+ .tall {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #153F36;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+ 
+ .active,
+ .tall:hover {
+     background-color: #717171;
+ }
  /* Fading animation */
  
  .fade {
@@ -339,6 +360,49 @@ Red: #B31E1A
      to {
          opacity: 1
      }
+ }
+ 
+ .funfacts {
+     width: 80%;
+     background-color: white;
+     color: #000;
+ }
+ 
+ .myFacts {
+     display: none;
+ }
+ 
+ .funfactcard {
+     padding: 50px;
+ }
+ 
+ #spons {
+     color: white;
+     background-color: #212529;
+ }
+ 
+ .sponsbilder {
+     margin-top: 15px;
+     height: auto;
+     width: auto;
+ }
+ 
+ #sponsorer {
+     list-style-type: none;
+     overflow: hidden;
+ }
+ 
+ #sponsorer li {
+     float: left;
+ }
+ 
+ #sponsorer li img {
+     display: block;
+     margin: 15px;
+ }
+ 
+ .w3-bar-item {
+     font-size: 15px;
  }
  
  @media only screen and (max-width: 768px) {
@@ -377,5 +441,8 @@ Red: #B31E1A
      }
      .listenisse {
          animation-duration: 5s;
+     }
+     .w3-container {
+         padding: 10px;
      }
  }
