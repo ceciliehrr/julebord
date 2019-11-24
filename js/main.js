@@ -263,7 +263,9 @@ var chuckVitser = [
     "Chuck Norris recently died. But he got better.",
     "Rome was not built in a day because Chuck Norris was not there to do the job right.",
     "In the Bible, Jesus turned water into wine. But then Chuck Norris turned that wine into beer.",
-    "They wanted to put Chuck Norris on Mount Rushmore, but the granite wasn’t though enough for his beard. "
+    "They wanted to put Chuck Norris on Mount Rushmore, but the granite wasn’t though enough for his beard. ",
+    "Chuck Norris can set ants on fire with a magnifying glass. At night. ",
+    "When Chuck Norris falls in water, Chuck Norris doesn't get wet. Water gets Chuck Norris."
 ]
 
 document.getElementById("chuckklikk").onclick = function() {
