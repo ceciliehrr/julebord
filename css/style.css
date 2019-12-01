@@ -198,6 +198,18 @@ Red: #B31E1A
      color: white;
      background-color: #212529;
  }
+ 
+ #countdown {
+     text-align: center;
+     font-size: 60px;
+     margin-top: 10px;
+     font-size: 24px;
+     color: #FBE300;
+ }
+ 
+ #tvbilde {
+     margin-top: 20px;
+ }
  /* Safari 4.0 - 8.0 */
  
  @-webkit-keyframes liste {
