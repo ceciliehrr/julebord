@@ -1,4 +1,5 @@
 // Snø //////////////////////////////
+/*
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
         function(callback) {
@@ -115,7 +116,7 @@ window.addEventListener("resize", function() {
 })
 
 init();
-
+*/
 // Automatic Slideshow - change image every 4 seconds
 /*
  var myIndex = 0;

@@ -23,6 +23,12 @@ Red: #B31E1A
      font-family: "Press Start 2P";
  }
  
+ iframe {
+     height: 100%;
+     width: auto;
+     border: none;
+ }
+ 
  .bell {
      margin: 0;
      padding: 0;
@@ -184,9 +190,9 @@ Red: #B31E1A
  }
  
  #fourth {
-     position: relative;
      color: white;
      background-color: #B31E1A;
+     text-align: center;
  }
  
  #funfacts {
