@@ -35,7 +35,7 @@
     }
     
     h2 {
-        font-size: 110%;
+        font-size: 200%;
         color: rgba(200, 220, 255, .3);
         width: 100%;
         position: fixed;
@@ -45,13 +45,17 @@
         z-index: 20;
     }
     
+    #h22 {
+        bottom: 20%;
+    }
+    
     #image {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
     
     #footerContent {
-        font-size: 110%;
+        font-size: 170%;
         color: rgba(200, 220, 255, .3);
         width: 100%;
         position: fixed;
@@ -155,9 +159,10 @@
             padding: 0;
         }
         .modal-content {
+            margin-top: 20%;
             margin: 0;
             height: auto;
-            min-height: 50%;
+            min-height: 60%;
         }
         #image {
             width: 100%;
