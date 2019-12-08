@@ -35,7 +35,7 @@
     }
     
     h2 {
-        font-size: 200%;
+        font-size: 100%;
         color: rgba(200, 220, 255, .3);
         width: 100%;
         position: fixed;
@@ -46,7 +46,7 @@
     }
     
     #h22 {
-        bottom: 20%;
+        bottom: 30%;
     }
     
     #image {
@@ -55,7 +55,7 @@
     }
     
     #footerContent {
-        font-size: 170%;
+        font-size: 100%;
         color: rgba(200, 220, 255, .3);
         width: 100%;
         position: fixed;
