@@ -1,0 +1,463 @@
+ @charset "utf-8";
+ /*
+Green: #153F36
+Red: #B31E1A
+ 
+*/
+ 
+ body {
+     font-family: "Lato", sans-serif;
+     background-color: #212529;
+ }
+ 
+ html {
+     background-color: #212529;
+ }
+ 
+ html,
+ body,
+ pre,
+ code,
+ kbd,
+ samp {
+     font-family: "Press Start 2P";
+ }
+ 
+ iframe {
+     height: 100%;
+     width: auto;
+     border: none;
+ }
+ 
+ .bell {
+     margin: 0;
+     padding: 0;
+     height: 30px;
+     width: 30px;
+ }
+ 
+ .modal {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     /* Stay in place */
+     z-index: 1;
+     /* Sit on top */
+     padding-top: 100px;
+     /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+     /* Full width */
+     height: 100%;
+     /* Full height */
+     overflow: auto;
+     /* Enable scroll if needed */
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+     background-color: rgba(0, 0, 0, 0.4);
+     /* Black w/ opacity */
+ }
+ /* Modal Content */
+ 
+ .modal-content {
+     background-color: #fefefe;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+ }
+ /* The Close Button */
+ 
+ .close {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ #cancel {
+     bottom: 52px;
+     float: right;
+ }
+ 
+ .w3-bar {
+     background-color: #212529;
+     color: white;
+ }
+ 
+ .big {
+     font-size: 24px;
+ }
+ 
+ #first {
+     color: white;
+     background-color: #153F36;
+     padding: 20px;
+ }
+ 
+ #welcome {
+     width: 300px;
+     height: auto;
+ }
+ 
+ .strek {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ 
+ .lists {
+     text-align: left;
+ }
+ 
+ .center-gif {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+ }
+ 
+ .gif-row {
+     display: inline;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .gif-size {
+     width: 120px;
+     height: auto;
+ }
+ 
+ .right-gif {
+     float: right;
+ }
+ 
+ .icon {
+     width: 45px;
+     height: 45px;
+     margin: 5px;
+     margin-right: 15px;
+ }
+ 
+ .icon-medium {
+     width: 85px;
+     height: 85px;
+ }
+ 
+ .icon-large {
+     width: 155px;
+     height: 155px;
+ }
+ 
+ #second {
+     color: white;
+     background-color: #B31E1A;
+ }
+ 
+ .pris {
+     font-size: 200px;
+     font-family: 'Monoton', cursive;
+ }
+ 
+ .listenisse {
+     position: relative;
+     -webkit-animation-name: liste;
+     /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 8s;
+     /* Safari 4.0 - 8.0 */
+     animation-name: liste;
+     animation-duration: 8s;
+     animation-delay: 2s;
+     animation-iteration-count: infinite;
+ }
+ 
+ #third {
+     color: white;
+     background-color: #153F36;
+ }
+ 
+ canvas {
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ 
+ #fourth {
+     color: white;
+     background-color: #B31E1A;
+     text-align: center;
+ }
+ 
+ #funfacts {
+     color: white;
+     background-color: #B31E1A;
+ }
+ 
+ #music {
+     color: white;
+     background-color: #212529;
+ }
+ 
+ #countdown {
+     text-align: center;
+     font-size: 60px;
+     margin-top: 10px;
+     font-size: 24px;
+     color: #FBE300;
+ }
+ 
+ #tvbilde {
+     margin-top: 20px;
+ }
+ /* Safari 4.0 - 8.0 */
+ 
+ @-webkit-keyframes liste {
+     0% {
+         right: 0px;
+     }
+     100% {
+         right: 100%;
+     }
+ }
+ /* Standard syntax */
+ 
+ @keyframes liste {
+     0% {
+         right: 0px;
+     }
+     100% {
+         right: 100%;
+     }
+ }
+ 
+ footer {
+     background-color: #212529;
+     color: white;
+ }
+ 
+ .hidden {
+     position: absolute;
+     display: none;
+ }
+ 
+ * {
+     box-sizing: border-box
+ }
+ 
+ #medisterbilder {
+     color: white;
+     background-color: #153F36;
+ }
+ 
+ .mySlides {
+     display: none;
+     text-align: center;
+ }
+ /* Slideshow container */
+ 
+ .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+ }
+ /* Next & previous buttons */
+ 
+ .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 15px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+ }
+ /* Position the "next button" to the right */
+ 
+ .round {
+     border-radius: 50%;
+     background-color: #153F36;
+ }
+ 
+ .next {
+     right: 0;
+ }
+ /* On hover, add a black background color with a little bit see-through */
+ 
+ .prev:hover,
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+ /* Caption text */
+ 
+ .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+ }
+ /* Number text (1/3 etc) */
+ 
+ .numbertext {
+     color: #B31E1A;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+ /* The dots/bullets/indicators */
+ 
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #B31E1A;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+ 
+ .active,
+ .dot:hover {
+     background-color: #717171;
+ }
+ 
+ .tall {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #153F36;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+ 
+ .active,
+ .tall:hover {
+     background-color: #717171;
+ }
+ /* Fading animation */
+ 
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+     from {
+         opacity: .4
+     }
+     to {
+         opacity: 1
+     }
+ }
+ 
+ @keyframes fade {
+     from {
+         opacity: .4
+     }
+     to {
+         opacity: 1
+     }
+ }
+ 
+ .funfacts {
+     width: 80%;
+     background-color: white;
+     color: #000;
+ }
+ 
+ .myFacts {
+     display: none;
+ }
+ 
+ .funfactcard {
+     padding: 50px;
+ }
+ 
+ #spons {
+     color: white;
+     background-color: #212529;
+ }
+ 
+ .sponsbilder {
+     margin-top: 15px;
+     width: 100%;
+     height: auto;
+ }
+ 
+ #sponsorer {
+     list-style-type: none;
+     overflow: hidden;
+ }
+ 
+ #sponsorer li {
+     float: left;
+ }
+ 
+ #sponsorer li img {
+     display: block;
+     margin: 15px;
+ }
+ 
+ .w3-bar-item {
+     font-size: 15px;
+ }
+ 
+ @media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+     /* On smaller screens, decrease text size */
+     .prev,
+     .next,
+     .text {
+         font-size: 11px
+     }
+     #name_field {
+         font-size: 5px;
+     }
+     .nes-input {
+         margin: 0;
+         height: 50px;
+     }
+     .pris {
+         font-size: 150px;
+     }
+     .nes-container li {
+         font-size: 12px;
+     }
+     .icon {
+         width: 30px;
+         height: 30px;
+         margin: 2px;
+         margin-right: 5px;
+     }
+     .nes-list {
+         margin: 2px;
+         padding: 2px;
+     }
+     .spotify {
+         width: 100%;
+     }
+     .listenisse {
+         animation-duration: 5s;
+     }
+ }

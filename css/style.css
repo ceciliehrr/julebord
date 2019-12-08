@@ -1,463 +1,227 @@
- @charset "utf-8";
- /*
-Green: #153F36
-Red: #B31E1A
- 
-*/
- 
- body {
-     font-family: "Lato", sans-serif;
-     background-color: #212529;
- }
- 
- html {
-     background-color: #212529;
- }
- 
- html,
- body,
- pre,
- code,
- kbd,
- samp {
-     font-family: "Press Start 2P";
- }
- 
- iframe {
-     height: 100%;
-     width: auto;
-     border: none;
- }
- 
- .bell {
-     margin: 0;
-     padding: 0;
-     height: 30px;
-     width: 30px;
- }
- 
- .modal {
-     display: none;
-     /* Hidden by default */
-     position: fixed;
-     /* Stay in place */
-     z-index: 1;
-     /* Sit on top */
-     padding-top: 100px;
-     /* Location of the box */
-     left: 0;
-     top: 0;
-     width: 100%;
-     /* Full width */
-     height: 100%;
-     /* Full height */
-     overflow: auto;
-     /* Enable scroll if needed */
-     background-color: rgb(0, 0, 0);
-     /* Fallback color */
-     background-color: rgba(0, 0, 0, 0.4);
-     /* Black w/ opacity */
- }
- /* Modal Content */
- 
- .modal-content {
-     background-color: #fefefe;
-     margin: auto;
-     padding: 20px;
-     border: 1px solid #888;
-     width: 80%;
- }
- /* The Close Button */
- 
- .close {
-     color: #aaaaaa;
-     float: right;
-     font-size: 28px;
-     font-weight: bold;
- }
- 
- .close:hover,
- .close:focus {
-     color: #000;
-     text-decoration: none;
-     cursor: pointer;
- }
- 
- #cancel {
-     bottom: 52px;
-     float: right;
- }
- 
- .w3-bar {
-     background-color: #212529;
-     color: white;
- }
- 
- .big {
-     font-size: 24px;
- }
- 
- #first {
-     color: white;
-     background-color: #153F36;
-     padding: 20px;
- }
- 
- #welcome {
-     width: 300px;
-     height: auto;
- }
- 
- .strek {
-     margin-top: 30px;
-     margin-bottom: 30px;
- }
- 
- .lists {
-     text-align: left;
- }
- 
- .center-gif {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 50%;
- }
- 
- .gif-row {
-     display: inline;
-     margin-left: auto;
-     margin-right: auto;
- }
- 
- .gif-size {
-     width: 120px;
-     height: auto;
- }
- 
- .right-gif {
-     float: right;
- }
- 
- .icon {
-     width: 45px;
-     height: 45px;
-     margin: 5px;
-     margin-right: 15px;
- }
- 
- .icon-medium {
-     width: 85px;
-     height: 85px;
- }
- 
- .icon-large {
-     width: 155px;
-     height: 155px;
- }
- 
- #second {
-     color: white;
-     background-color: #B31E1A;
- }
- 
- .pris {
-     font-size: 200px;
-     font-family: 'Monoton', cursive;
- }
- 
- .listenisse {
-     position: relative;
-     -webkit-animation-name: liste;
-     /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 8s;
-     /* Safari 4.0 - 8.0 */
-     animation-name: liste;
-     animation-duration: 8s;
-     animation-delay: 2s;
-     animation-iteration-count: infinite;
- }
- 
- #third {
-     color: white;
-     background-color: #153F36;
- }
- 
- canvas {
-     position: absolute;
-     top: 0;
-     left: 0;
- }
- 
- #fourth {
-     color: white;
-     background-color: #B31E1A;
-     text-align: center;
- }
- 
- #funfacts {
-     color: white;
-     background-color: #B31E1A;
- }
- 
- #music {
-     color: white;
-     background-color: #212529;
- }
- 
- #countdown {
-     text-align: center;
-     font-size: 60px;
-     margin-top: 10px;
-     font-size: 24px;
-     color: #FBE300;
- }
- 
- #tvbilde {
-     margin-top: 20px;
- }
- /* Safari 4.0 - 8.0 */
- 
- @-webkit-keyframes liste {
-     0% {
-         right: 0px;
-     }
-     100% {
-         right: 100%;
-     }
- }
- /* Standard syntax */
- 
- @keyframes liste {
-     0% {
-         right: 0px;
-     }
-     100% {
-         right: 100%;
-     }
- }
- 
- footer {
-     background-color: #212529;
-     color: white;
- }
- 
- .hidden {
-     position: absolute;
-     display: none;
- }
- 
- * {
-     box-sizing: border-box
- }
- 
- #medisterbilder {
-     color: white;
-     background-color: #153F36;
- }
- 
- .mySlides {
-     display: none;
-     text-align: center;
- }
- /* Slideshow container */
- 
- .slideshow-container {
-     max-width: 1000px;
-     position: relative;
-     margin: auto;
- }
- /* Next & previous buttons */
- 
- .prev,
- .next {
-     cursor: pointer;
-     position: absolute;
-     top: 50%;
-     width: auto;
-     padding: 16px;
-     margin-top: -22px;
-     color: white;
-     font-weight: bold;
-     font-size: 15px;
-     transition: 0.6s ease;
-     border-radius: 0 3px 3px 0;
-     user-select: none;
- }
- /* Position the "next button" to the right */
- 
- .round {
-     border-radius: 50%;
-     background-color: #153F36;
- }
- 
- .next {
-     right: 0;
- }
- /* On hover, add a black background color with a little bit see-through */
- 
- .prev:hover,
- .next:hover {
-     background-color: rgba(0, 0, 0, 0.8);
- }
- /* Caption text */
- 
- .text {
-     color: #f2f2f2;
-     font-size: 15px;
-     padding: 8px 12px;
-     position: absolute;
-     bottom: 8px;
-     width: 100%;
-     text-align: center;
- }
- /* Number text (1/3 etc) */
- 
- .numbertext {
-     color: #B31E1A;
-     font-size: 12px;
-     padding: 8px 12px;
-     position: absolute;
-     top: 0;
- }
- /* The dots/bullets/indicators */
- 
- .dot {
-     cursor: pointer;
-     height: 15px;
-     width: 15px;
-     margin: 0 2px;
-     background-color: #B31E1A;
-     border-radius: 50%;
-     display: inline-block;
-     transition: background-color 0.6s ease;
- }
- 
- .active,
- .dot:hover {
-     background-color: #717171;
- }
- 
- .tall {
-     cursor: pointer;
-     height: 15px;
-     width: 15px;
-     margin: 0 2px;
-     background-color: #153F36;
-     border-radius: 50%;
-     display: inline-block;
-     transition: background-color 0.6s ease;
- }
- 
- .active,
- .tall:hover {
-     background-color: #717171;
- }
- /* Fading animation */
- 
- .fade {
-     -webkit-animation-name: fade;
-     -webkit-animation-duration: 1.5s;
-     animation-name: fade;
-     animation-duration: 1.5s;
- }
- 
- @-webkit-keyframes fade {
-     from {
-         opacity: .4
-     }
-     to {
-         opacity: 1
-     }
- }
- 
- @keyframes fade {
-     from {
-         opacity: .4
-     }
-     to {
-         opacity: 1
-     }
- }
- 
- .funfacts {
-     width: 80%;
-     background-color: white;
-     color: #000;
- }
- 
- .myFacts {
-     display: none;
- }
- 
- .funfactcard {
-     padding: 50px;
- }
- 
- #spons {
-     color: white;
-     background-color: #212529;
- }
- 
- .sponsbilder {
-     margin-top: 15px;
-     width: 100%;
-     height: auto;
- }
- 
- #sponsorer {
-     list-style-type: none;
-     overflow: hidden;
- }
- 
- #sponsorer li {
-     float: left;
- }
- 
- #sponsorer li img {
-     display: block;
-     margin: 15px;
- }
- 
- .w3-bar-item {
-     font-size: 15px;
- }
- 
- @media only screen and (max-width: 768px) {
-     /* For mobile phones: */
-     /* On smaller screens, decrease text size */
-     .prev,
-     .next,
-     .text {
-         font-size: 11px
-     }
-     #name_field {
-         font-size: 5px;
-     }
-     .nes-input {
-         margin: 0;
-         height: 50px;
-     }
-     .pris {
-         font-size: 150px;
-     }
-     .nes-container li {
-         font-size: 12px;
-     }
-     .icon {
-         width: 30px;
-         height: 30px;
-         margin: 2px;
-         margin-right: 5px;
-     }
-     .nes-list {
-         margin: 2px;
-         padding: 2px;
-     }
-     .spotify {
-         width: 100%;
-     }
-     .listenisse {
-         animation-duration: 5s;
-     }
- }
+    html,
+    body {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-filter: contrast(120%);
+        filter: contrast(120%);
+        background-color: black;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(1600px at 70% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%);
+    }
+    
+    .content {
+        width: inherit;
+        height: inherit;
+    }
+    
+    #universe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    h2 {
+        font-size: 110%;
+        color: rgba(200, 220, 255, .3);
+        width: 100%;
+        position: fixed;
+        bottom: 50%;
+        padding: 20px;
+        text-align: center;
+        z-index: 20;
+    }
+    
+    #image {
+        width: 50%;
+        height: auto;
+    }
+    
+    #footerContent {
+        font-size: 110%;
+        color: rgba(200, 220, 255, .3);
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        padding: 20px;
+        text-align: center;
+        z-index: 20;
+    }
+    
+    #footer {
+        position: absolute;
+        bottom: 0px;
+        height: 300px;
+        width: 100%;
+    }
+    
+    #scene {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -800px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgba(200, 220, 255, 1);
+        opacity: .4;
+        transition: opacity .4s ease;
+    }
+    
+    a:hover {
+        opacity: 1;
+    }
+    
+    .fa-camera-retro {
+        color: rgba(200, 220, 255, 1);
+        opacity: .4;
+        font-size: 210%;
+        margin-top: 1%;
+    }
+    
+    .fas:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 2%;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        z-index: 20;
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        text-align: center;
+        margin: 150px;
+        padding: 20px;
+        width: auto;
+        background-image: radial-gradient(1600px at 70% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%);
+    }
+    /* The Close Button */
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .modal {
+            width: 100%;
+            height: 100%;
+            margin-top: 10%;
+            padding: 0;
+        }
+        .modal-content {
+            margin: 0;
+            height: auto;
+            min-height: 50%;
+        }
+        #image {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .modal {
+        -webkit-animation: fadein 2s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 2s;
+        /* Internet Explorer */
+        -o-animation: fadein 2s;
+        /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+    
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Firefox < 16 */
+    
+    @-moz-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Safari, Chrome and Opera > 12.1 */
+    
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Internet Explorer */
+    
+    @-ms-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Opera < 12.1 */
+    
+    @-o-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }

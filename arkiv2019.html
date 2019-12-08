@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="no">
+<title>Julebord i kjellern</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="pictures/gitar.gif">
+<meta property="og:image:type" content="image/gif">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="240">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/stylearkiv.css">
+<link href="https://unpkg.com/nes.css@2.2.1/css/nes.min.css" rel="stylesheet" />
+
+<body onload="changeImage()">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">TOPP</a>
+            <a href="#second" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRIS</a>
+            <a href="#third" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HVA SKJER</a>
+            <a href="#medisterbilder" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDISTER</a>
+            <a href="#funfacts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FUNFACTS</a>
+            <a href="#spons" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONS</a>
+            <a href="#fourth" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIBBA</a>
+            <a href="#some" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SoMe</a>
+            <a id="myBtn" class="w3-bar-item w3-button w3-padding-large center-gif" title="spam me"><img class="bell" src="pictures/bell.gif"></a>
+
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#second" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRIS</a>
+        <a href="#third" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HVA SKJER</a>
+        <a href="#medisterbilder" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEDISTER</a>
+        <a href="#funfacts" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FUNFACTS</a>
+        <a href="#spons" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONS</a>
+        <a href="#fourth" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RIBBA</a>
+        <a href="#some" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SoMe</a>
+    </div>
+    <!---MODAL-->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content nes-dialog is-dark is-rounded" id="dialog-rounded">
+            <span class="close">&times;</span>
+            <p class="title" id="modal-title"></p>
+            <img class="center-gif" width="50" height="auto" alt="email" src="pictures/email.gif">
+            <form method="POST" netlify-honeypot="bot-field" data-netlify="true" action="takktakk.html">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="nes-field">
+                    <label for="name_field" id="mail">Subscribe?</label>
+                    <input type="email" name="email" id="name_field" class="nes-input" placeholder="Din digitale telefaksadresse" required>
+                </div>
+                <button type="submit" class="nes-btn is-primary" id="confirm">Send</button>
+            </form>
+            <button class="nes-btn" id="cancel">Nei!!!</button>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- The First Section -->
+        <div id="first">
+
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <img class="center-gif" alt="velkommen" src="pictures/3dwelcome.gif" id="welcome">
+                <img class="center-gif strek" src="pictures/strek.gif">
+
+                <p class="w3-center big"><i>CHRISTMAS TABLE 2019</i></p>
+                <img class="center-gif strek" src="pictures/strek.gif">
+
+                <div class="nes-container is-rounded is-dark with-title">
+                    <p class="title">INFO</p>
+                    <div class="lists">
+                        <ul class="nes-list is-circle">
+                            <li><img class="icon" src="pictures/tid.gif">7. desember klokken 18:00</li>
+                            <li><img class="icon" src="pictures/hus.gif">Kantina i Dyrmyrgata 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="center-gif icon-large" src="pictures/outfit.gif" id="rompenisse">
+        </div>
+
+
+        <!-- The Second Section -->
+        <div id="second">
+            <div class="w3-container w3-content w3-padding-64">
+                <img class="center-gif icon-medium" src="pictures/dollar.gif" id="dollar">
+                <img class="center-gif strek" src="pictures/strek.gif">
+                <p class="w3-center big"><i>PRIS</i></p>
+                <img class="center-gif strek" src="pictures/strek.gif">
+                <div class="w3-center pris">200</div>
+                <section class="w3-center">
+                    <img class="gif-row gif-size" src="https://media.giphy.com/media/h0MTqLyvgG0Ss/giphy.gif">
+                    <img class="gif-row gif-size" src="https://media.giphy.com/media/ND6xkVPaj8tHO/giphy.gif">
+                    <img class="gif-row gif-size" src="https://media.giphy.com/media/3oEdvbpl0X32bXD2Vi/giphy.gif">
+                </section>
+
+                <br> <br>
+                <section class="w3-center icon-list">
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                    <i class="nes-icon coin is-medium"></i>
+                </section>
+                <br>
+                <div class="nes-container is-rounded is-dark with-title">
+                    <p class="title">INKLUDERER</p>
+                    <div class="lists">
+                        <ul class="nes-list is-circle">
+                            <li>- Ribbe og tilbehør, det være seg medisterkaker, medisterpølser, poteter osv</li>
+                            <li>- Dessert, det være seg karamellpudding, karamellsaus og andre overraskelser</li>
+                            <li>- Velkomstgløgg</li>
+                            <li>- Et par pils til maten</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nisseanime">
+                    <img class="listenisse right-gif icon-large" src="pictures/lister.gif">
+                </div>
+            </div>
+        </div>
+
+        <!-- The Third Section -->
+        <div id="third">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <img class="center-gif strek" src="pictures/strek.gif">
+                <p class="w3-center big"><i>HVA SKJER?</i></p>
+                <img class="center-gif strek" src="pictures/strek.gif">
+                <div class="nes-container is-rounded is-dark with-title">
+                    <p class="title">KJØREPLAN</p>
+                    <div class="lists">
+                        <ul class="nes-list is-circle">
+                            <li>18:00: Gløgg</li>
+                            <li>19:00: Middag</li>
+                            <li>21:00: Dessert</li>
+                            <li>21:30: Quiz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <img class="center-gif icon-large" src="pictures/gitar.gif">
+
+        </div>
+    </div>
+
+    <!-- The music Section -->
+    <div id="music">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <p class="w3-center big"><i>KOM I RIKTIG STEMNING</i></p>
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <img class="center-gif" src="pictures/noter.gif">
+            <br>
+            <iframe class="center-gif spotify" src="https://open.spotify.com/embed/playlist/3wr0y25lqjj2Q9dT8YAapN" width="600" height="230" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
+    </div>
+    <!--Medisterbilder-->
+    <div id="medisterbilder">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <p class="w3-center big"><i>Medister</i></p>
+            <p class="w3-center">det være seg kaker og pølser</p>
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister1.jpg" style="width:80%">
+                    <div class="text">Tarmforberedelser</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister2.jpg" style="width:80%">
+                    <div class="text">Tarmforberedelser</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister3.jpg" style="width:80%">
+                    <div class="text">Tarmdans</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister4.jpg" style="width:80%">
+                    <div class="text">Tarmdans</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister5.jpg" style="width:80%">
+                    <div class="text">Tarmskyll</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister5_1.jpg" style="width:80%">
+                    <div class="text">Tarmfylling</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister5_2.jpg" style="width:80%">
+                    <div class="text">Pølselaging</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister6.jpg" style="width:80%">
+                    <div class="text">Medisterpølse</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister7.jpg" style="width:80%">
+                    <div class="text">Medisterpølse</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister8.jpg" style="width:80%">
+                    <div class="text">Medisterpølse</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister9.jpg" style="width:80%">
+                    <div class="text">Medisterdeig</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister10.jpg" style="width:80%">
+                    <div class="text">Medisterkake</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister11.jpg" style="width:80%">
+                    <div class="text">Medisterkake</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister12.jpg" style="width:80%">
+                    <div class="text">Medisterkaker</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister13.jpg" style="width:80%">
+                    <div class="text">Resultat</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18+</div>
+                    <img src="pictures/medister14.jpg" style="width:80%">
+                    <div class="text">Resultat</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+                <span class="dot" onclick="currentSlide(16)"></span>
+
+            </div>
+        </div>
+    </div>
+    <!--FUNFACTS-->
+    <div id="funfacts">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <p class="w3-center big"><i>JULEFUNFACTS</i></p>
+            <img class="center-gif strek" src="pictures/strek.gif">
+
+            <div class="slideshow-container">
+                <div class="myFacts fade">
+                    <div class="w3-container w3-card w3-white w3-round w3-margin funfactcard"><br>
+                        <img src="pictures/jesus.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+                        <span class="w3-right w3-opacity"></span>
+                        <h4>Jesus Christ</h4><br>
+                        <hr class="w3-clear">
+                        <p>Vi feirer Jesus sin bursdag på feil dag. Han har nemlig bursdag i april eller no...Kanskje mars</p>
+                    </div>
+                </div>
+                <div class="myFacts fade">
+                    <div class="w3-container w3-card w3-white w3-round w3-margin funfactcard"><br>
+                        <img src="pictures/hassel.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+                        <span class="w3-right w3-opacity"></span>
+                        <h4>David Hasselhoff</h4><br>
+                        <hr class="w3-clear">
+                        <p>Vet du hva David Hasselhoff gjør på julaften? Han leter etter frihet.</p>
+                    </div>
+                </div>
+                <div class="myFacts fade">
+                    <div class="w3-container w3-card w3-white w3-round w3-margin funfactcard"><br>
+                        <img src="pictures/chuck_norris.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+                        <span class="w3-right w3-opacity"></span>
+                        <h4>Chuck Norris</h4><br>
+                        <hr class="w3-clear">
+                        <p>Jesus can walk on water, but Chuck Norris can swim on land.</p>
+                    </div>
+                </div>
+                <a class="prev round" onclick="plusFacts(-1)">&#10094;</a>
+                <a class="next round" onclick="plusFacts(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="tall" onclick="currentFact(1)"></span>
+                <span class="tall" onclick="currentFact(2)"></span>
+                <span class="tall" onclick="currentFact(3)"></span>
+            </div>
+        </div>
+    </div>
+    <!--SPONSORER-->
+    <div id="spons">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <p class="w3-center big strek"><i>SPONSORER</i></p>
+            <img class="center-gif" src="pictures/strek.gif">
+            <a onclick="document.getElementById('chuck').showModal();"><img class="center-gif sponsbilder" id="chuckklikk" src="pictures/norris.gif"></a>
+            <a onclick="document.getElementById('hassel').showModal();"><img class="center-gif sponsbilder" id="hasselklikk" src="pictures/bannerdavid.gif"></a>
+            <ul id="sponsorer">
+                <li> <img class="center-gif icon-medium" src="pictures/playstation.gif"></li>
+                <li> <img class="center-gif icon-medium" src="pictures/Windows95.gif"></li>
+                <li> <img class="center-gif icon-medium" src="pictures/cola.gif"></li>
+            </ul>
+            <img class="center-gif icon-medium" src="pictures/mcdonalds.gif">
+        </div>
+    </div>
+    <section>
+        <dialog class="nes-dialog is-dark is-rounded" id="chuck">
+            <form method="dialog">
+                <p class="title"></p>
+                <p id="chucktekst">Alert: this is a dialog.</p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn">Escape</button>
+                </menu>
+            </form>
+        </dialog>
+    </section>
+    <section>
+        <dialog class="nes-dialog is-dark is-rounded" id="hassel">
+            <form method="dialog">
+                <p class="title"></p>
+                <p id="hasseltekst">Hasselhoff </p>
+                <i>- Mitch Buchannon</i>
+                <menu class="dialog-menu">
+                    <button class="nes-btn">Escape</button>
+                </menu>
+            </form>
+        </dialog>
+    </section>
+    <!--Ribba minutt for minutt-->
+    <div id="fourth">
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <img class="center-gif strek" src="pictures/strek.gif">
+            <p class="w3-center big"><i>RIBBA - MINUTT FOR MINUTT - HØYDEPUNKTER</i></p>
+            <img class="center-gif strek" src="pictures/strek.gif">
+
+            <img class="center-gif" src="pictures/coming_soon.gif">
+
+        </div>
+    </div>
+    <!-- Image of location/map
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+ -->
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-medium" id="some">
+        <section class="icon-list">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/events/384490719058090/" target="_blank"><i class="nes-icon facebook is-medium"></i></a>
+        </section>
+        <br>
+
+        <p>&copy;SoMe-medister Cecilie Hansen Rørås</p>
+        <img id="somegif" width="202" height="140">
+
+    </footer>
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
