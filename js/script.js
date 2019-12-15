@@ -172,3 +172,33 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Get the VIDEO modal ///////////////
+var modalVideo = document.getElementById("myVideo");
+
+// Get the button that opens the modal
+var btnV = document.getElementById("myBtnVideo");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeVideo")[0];
+
+var video = document.getElementById("video");
+
+// When the user clicks the button, open the modal 
+btnV.onclick = function() {
+    modalVideo.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modalVideo.style.display = "none";
+    video.pause();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalVideo) {
+        modalVideo.style.display = "none";
+        video.pause();
+    }
+}
